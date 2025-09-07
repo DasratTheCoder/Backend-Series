@@ -33,7 +33,7 @@ const userSchema = new Schema(
         },
         password: {
             type: String,
-            required: true
+            required: [true,"password is required"]
         },
         watchHistory: [
             {
